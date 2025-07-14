@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <link rel="stylesheet"  href="reg.css">
+    </head>
+    <body>
+        <h1>Yoga Registration form</h1>
+        <form action="/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" maxlength="10" id="phone" name="phone" required><br><br>
+            <label for="disease">Disease:</label>
+            <input type="checkbox" id="disease" name="disease" value="none" checked>None
+            <input type="checkbox" id="disease" name="disease" value="diabetes">Diabetes
+            <input type="checkbox" id="disease" name="disease" value="hypertension">Hypertension
+            <input type="checkbox" id="disease" name="disease" value="asthma">Asthma
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="submit" value="Register">
+        </form>
+    </body>
+</html>
